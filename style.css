@@ -153,8 +153,15 @@ footer {
     align-items: center;
 }
 
+
 /* ----- RESPONSIVE ADJUSTMENTS ----- */
 @media (max-width: 768px) {
+
+    /* Header adjustments */
+    header {
+        position: relative;
+    }
+
     .logo {
         max-width: 100px;
     }
@@ -163,10 +170,14 @@ footer {
         font-size: 1.2rem;
     }
 
+    /* Show burger only on small screens */
     .menu-toggle {
         display: block;
+        position: relative;
+        z-index: 9999;
     }
 
+    /* Collapse nav by default on small screens */
     nav {
         max-height: 0;
         overflow: hidden;
@@ -175,10 +186,12 @@ footer {
         background: #5A8DEE;
     }
 
+    /* When JS toggles .active, expand it */
     nav.active {
         max-height: 500px;
     }
 
+    /* Stack menu links vertically */
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -187,6 +200,10 @@ footer {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: white;
     }
 
     /* Stack image and text vertically on smaller screens */
