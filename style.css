@@ -115,6 +115,14 @@ nav ul li a:hover {
     padding: 0;
     border-radius: 0;
 }
+.center-text {
+    max-width: 100%;
+    color: inherit;
+    text-align: center;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
 
 /* ===============================
    TABLE STYLING
@@ -162,7 +170,14 @@ nav ul li a:hover {
     opacity: 0.7; /* slightly opaque */
     z-index: 1;
 }
-
+.home-image {
+    display: block;
+    height: 50vh;         /* image height = 60% of viewport height */
+    width: auto;          /* width adjusts automatically */
+    max-width: 100vw;     /* don’t exceed screen width */
+    margin: 0 auto;       /* center horizontally */
+    object-fit: contain;  /* show entire image without cropping */
+}
 /* Homepage hero text only */
 .container .text {
     position: relative;
@@ -189,6 +204,21 @@ footer {
     margin-top: 20px;
 }
 
+footer a:link {
+    color: cyan;
+}
+
+footer a:visited {
+    color: cyan;
+}
+
+footer a:hover{
+    color: lightgreen;
+}
+
+footer a:active{
+    color: gold;
+}
 /* ===============================
    RESPONSIVE STYLES
    =============================== */
